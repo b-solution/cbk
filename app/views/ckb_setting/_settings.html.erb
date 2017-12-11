@@ -1,0 +1,19 @@
+<p>
+  <label>
+    Custom Field to be followed
+  </label>
+  <%= select_tag 'settings[custom_field_id]', options_for_select(IssueCustomField.pluck(:name, :id), selected: @settings['custom_field_id']), include_blank: true %>
+</p>
+
+<p>
+  <label> Users to be notified </label>
+
+  <%= select_tag('settings[users]', options_for_select(User.active.map{|user| [user.name, user.id] }, selected: @settings['users']),multiple: true, include_blank: true) %>
+</p>
+
+<p>
+  <label>Tracker to be set when Custom Field is validated</label>
+
+  <%= select_tag('settings[tracker_id]', options_for_select(Tracker.all.map{|t| [t.name, t.id] }, selected: @settings['tracker_id']), include_blank: true) %>
+
+</p>
