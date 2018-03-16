@@ -12,5 +12,5 @@ Redmine::Plugin.register :ckb_workflow do
   # Send Email to approvers and they to click Yes or NO and make controller to save that
 
   # test
-  # 222
+  # 22EEE2
 end
