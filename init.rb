@@ -7,7 +7,7 @@ Redmine::Plugin.register :ckb_workflow do
   author_url 'https://www.github.com/bilel-kedidi'
 
 
-  # Show If this issue is approved on show page
+  # Show1 If this issue is approved on show page
 
   # Send Email to approvers and they to click Yes or NO and make controller to save that
 
